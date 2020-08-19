@@ -7,6 +7,7 @@
 	<link rel="shorcut icon" type="image-x/png" href="imagens/icon.ico"/>
 	<script src="js/jquery-3.5.1.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/mobile-menu.js"></script>
 	<title>Cadê meu Brush?</title>
 </head>
 <body>
@@ -15,31 +16,13 @@
 
 	<section class="header">
 		<div class="center">
-			<img src="imagens/logo.png"> 
-				<nav>
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="portifolio.html">PORTIFÓLIO</a></li>
-						<li><a target="_blank" href="https://www.youtube.com/channel/UCurV1GKruMOZTWwoRqEPg1Q?view_as=subscriber">YOUTUBE</a></li>
-						<li><a href="">REDES SOCIAIS</a>
-							<ul>	
-								<li><a target="_blank" href="https://instagram.com/cademeubrush/">INSTAGRAM</a></li> 
-								<li><a target="_blank" href="https://www.facebook.com/cademeubrush/">FACEBOOK</a></li> 
-								<li><a target="_blank" href="https://www.behance.net/cadmeubrush">BEHANCE</a></li> 
-							</ul>
-						</li>
-					</ul>
-				</nav>
-		</div><!--center-->
-		<div class="clear"></div>
-	</section><!--section header-->
+			<div class="header-logo">
+				<img src="imagens/logo.png"> 
+			</div><!--header-logo-->
 
-	<div class="lista-responsiva">
-		<nav>
-			<ul>
+			<nav class="desktop-menu">
 				<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="portifolio.html">PORTIFÓLIO</a></li>
 					<li><a target="_blank" href="https://www.youtube.com/channel/UCurV1GKruMOZTWwoRqEPg1Q?view_as=subscriber">YOUTUBE</a></li>
 					<li><a href="">REDES SOCIAIS</a>
 						<ul>	
@@ -49,8 +32,21 @@
 						</ul>
 					</li>
 				</ul>
-		</nav>
-	</div><!--lista-responsiva-->
+			</nav><!--desktop-menu-->
+
+			<nav class="mobile-menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a target="_blank" href="https://www.youtube.com/channel/UCurV1GKruMOZTWwoRqEPg1Q?view_as=subscriber">YOUTUBE</a></li>
+					<li><a target="_blank" href="https://instagram.com/cademeubrush/">INSTAGRAM</a></li> 
+					<li><a target="_blank" href="https://www.facebook.com/cademeubrush/">FACEBOOK</a></li> 
+					<li><a target="_blank" href="https://www.behance.net/cadmeubrush">BEHANCE</a></li> 
+
+				</ul>
+			</nav>
+		</div><!--center-->
+		<div class="clear"></div>
+	</section><!--section header-->
 </header><!--header-->
 	
 <section class="section-logotipo">
@@ -78,7 +74,7 @@
 				<div class="container-info">
 					<h2>Conheça o canal Cadê meu Brush? no Youtube!</h2>
 					<p>Vídeo aulas, tutoriais, speed arts, desafios criativos e muito mais para você aprender e se divertir com arte digital!</p>
-					<a target="_blank" href="https://www.youtube.com/channel/UCurV1GKruMOZTWwoRqEPg1Q?sub_confirmation=1"><button  class="button" style="vertical-align: middle">
+					<a target="_blank" href="https://www.youtube.com/channel/UCurV1GKruMOZTWwoRqEPg1Q"><button  class="button" style="vertical-align: middle">
 					<span>Quero Aprender!</span></button></a>
 				</div><!--container-info-->
 			</div><!--container-sobre-->
@@ -139,15 +135,10 @@
 		<img class="a" src="imagens/slider/slider3.png">
 
 		<div class="bullets-nav">
-			<!-- <span style="background-color: #cf3928;"></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span> -->
+
 		</div>
 	</div><!--slider-->
-</div>
+</div><!--slider-container-->
 
 
 <footer class="footer">
@@ -156,35 +147,42 @@
 			<div class="logo-footer">
 				<img src="imagens/logo.png">
 			</div>
-		</div>
+		</div><!--section-1-footer-->
+
 		<div class="section2-footer">
 			<div class="section2-flex">
 				<div class="flex-info">
 					<h2>Cadê meu Brush?</h2>
 					<p>Criamos conteúdo para ajudar artistas que sonham em aprender desenho e pintura digital!<br>Nosso objetivo é te ajudar na jornada artistica compartilhando conhecimento!</p>
-				</div>
+				</div><!--flex-info-->
 				<div class="flex-social">
 					<h2>Quer falar com a gente?</h2>
 					<p>cademeubrush@gmail.com</p>
 					<div class="social-footer">
-						<a href="" target="_blank">
+						<a href="https://www.youtube.com/channel/UCurV1GKruMOZTWwoRqEPg1Q" target="_blank">
 							<img src="imagens/youtube.png" width="35px" height="35">
 						</a>
-						<a href="" target="_blank">
+						<a href="https://www.facebook.com/cademeubrush/" target="_blank">
 							<img src="imagens/facebook.png" width="30px" height="30px">
 						</a>
-						<a href="" target="_blank">
+						<a href="https://instagram.com/cademeubrush/" target="_blank">
 							<img src="imagens/instagram.png" width="30px" height="30px">
 						</a>
-				</div>
-			</div>
-		</div>
+				</div><!--flex-social-->
+			</div><!--section-2-flex-->
+		</div><!--section-2-footer-->
+		<a class="back-to-top" href="#top" >Topo</a>
+	</div><!--center-->
+</footer><!--footer-->
+<div class="autor-pagina">
+	<div class="container-autor">
+		<p>Desenvolvido por Vinicius Silva Pereira</p>
+		<a href="https://github.com/tiviniciussilvapereira" target="_blank">
+		<img src="imagens/github.png"></a>
+		<p>Contato: ti.viniciussilvapereira@gmail.com</p>
 	</div>
-	<a class="back-to-top" href="#top" >Topo</a>
-</footer>
 
-	
-
+</div>
 </div>
 </body>
 </html>
