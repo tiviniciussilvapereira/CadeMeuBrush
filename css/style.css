@@ -244,6 +244,7 @@ nav.mobile-menu ul li a{
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	width: 100%;
 }
 
@@ -293,6 +294,14 @@ nav.mobile-menu ul li a{
 		color: white;
 		font-size: 20px;
 		text-align: center;
+	}
+	.video-container video{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		width: 200%;
 	}
 	
 	
@@ -418,111 +427,87 @@ nav.mobile-menu ul li a{
 }
 /*--------FIM SECTION-QUERO-APRENDER----------*/
 
-/*--------SECTION-MASCOTE----------*/
-section.section-mascote{
-	background-color: #ee5b4a;
-	width: 100%;
-	height: 300px;
-}
+/*--------SECTION-INFO----------*/
 
-section.section-mascote > .center{
-	max-width: 1600px;
-}
-
-.box-mascote{
-	float: left;
-	width: 40%;
-	height: 400px;
-	background-image: url(../imagens/mascote-box.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: -100px;
-}
-
-.box-texto{
-	float: left;
-	width: 60%;
-	color: white;
-	text-align: center;
-}
-
-.box-texto h2{
-	font-weight: normal;
-	font-size: 30px;
-	margin-bottom: 5px;
-}
-
-.box-texto p{
-	font-size: 18px;
-	text-align: center;
-	padding-top: 5px;
-}
-
-
-.container-texto{
-	width: 90%;
-	height: 350px;
-	margin: 20px auto;
-}
-
-.parent-texto{
+.section-info{
 	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	height: 250px;
-}
-.child{
-	background-color: #ff8577;
-	border-radius: 20px;
-	padding: 10px;
-	flex: 1 1 190px; /*  Stretching: */
-    flex: 0 1 190px; /*  No stretching: */
-	margin: 5px;
-}
-.child img{
-	padding: 2px;
 }
 
-@media screen and (max-width:1485px){
-	.box-mascote{
-		float: none;
-		width: 100%;
-		height: 400px;
-		background-image: url(../imagens/mascote-box.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		margin-top: 0;
-		position: relative;
-		top: -50px;
-		border-bottom: 5px solid #ff8577;
-	}
-	.box-texto{
-		float: none;
-		width: 100%;
-		color: white;
-		text-align: center;
-		position: relative;
-		top: -35px;
-	}
-	section.section-mascote{
-		background-color: #ee5b4a;
-		width: 100%;
-		height: 80vh;	
-	}	
+.container-mascote{
+	width: 50%;
+	background-color: #ee5b4a;
+	padding: 2px 2%;
 }
-
-@media screen and (max-width:680px){
-	.box-texto p{
-		font-size: 15px;
-	}
+.container-grafico{
+	width: 50%;
+	background-color: #ee5b4a;
+	padding: 20px 2%;
+}
+.parent-mascote{
+	display: grid;
+	place-items: center;
+	margin: 0 auto;
+	width: 80%;
+	height: 350px;
+	position: relative;
 	
 }
-/*--------FIM-SECTION-MASCOTE----------*/
+.child-mascote{
+	background-image: url(../imagens/mascote-box.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: -50px;
+	z-index: 1;
+}
+
+.obj{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	height: 350px;
+	margin: 0 auto;
+}
+.obj-child{
+	height: 250px;
+	flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+	margin: 5px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+}
+.obj-child p{
+	color: white;
+	font-size: 15px;
+
+}
+.obj-child img{
+	position: relative;
+	top: -25px;
+}
+@media screen and (max-width: 940px){
+	.section-info{
+		flex-direction: column;
+	}
+	.container-mascote{
+		display: inline-block;
+		width: 100%;
+	}
+	.container-grafico{
+		display: inline-block;
+		width: 100%;
+	}
+}
+/*--------FIM-SECTION-INFO----------*/
 
 /*--------SECTION-ARTES----------*/
 section.artes{
 	width: 100%;
-	background-color: #46d5a0;
+	background-color: #ee5b4a;
 }
 .artes-wrapper{
 	padding: 4%;
@@ -536,12 +521,12 @@ section.artes{
 	margin: 0 auto;
 	width: 90%;
 	height: 3px;
-	background: #ee5b4a;
+	background: #46d5a0;
 }
 
 section.artes .texto-artes{
 	margin-top: -15px;
-	background: #46d5a0;
+	background: #ee5b4a;
 	padding: 0 18px;
 }
 
@@ -583,6 +568,7 @@ section.artes .texto-artes h2{
 	left: 50%;
 	bottom: 10px;
 	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
 }
 
 .bullets-nav span{
