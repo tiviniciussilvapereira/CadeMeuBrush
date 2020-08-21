@@ -501,6 +501,11 @@ nav.mobile-menu ul li a{
 		display: inline-block;
 		width: 100%;
 	}
+	.child-mascote{
+		width: 500px;
+		height: 320px;
+	}
+	
 }
 /*--------FIM-SECTION-INFO----------*/
 
